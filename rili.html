@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>瑞丽网-网聚世界潮流，设计你的时尚|rayli.com.cn</title>
+	<link rel="shortcut icon" href="http://www.rayli.com.cn/favicon.ico">
+	<link rel="stylesheet" href="css/rili.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bannerPic.js"></script>
+	<script type="text/javascript" src="js/mover.js"></script>
+	
+</head>
+<body>
+<!--头部-->
+	<div class="header">
+		<div class="headerLeft">
+			<a href="#">瑞丽网</a>
+			<a href="#">瑞丽模特大赛</a>
+			<a href="#">瑞丽美容大赏</a>
+			<a href="#">男人风尚</a>
+		</div>
+		<div class="logo">
+			<img src="img/logo.png" alt="瑞丽网logo" />
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let aDoms = $(".headerLeft").children();
+				aDoms.mouseenter(function(){
+					$(this).css("color","white");
+				});
+				aDoms.mouseleave(function(){
+					$(this).css("color","#ffb4b6");
+				});
+			});
+		</script>
+		<div class="headerRight">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let aDoms = $(".headerRight").children();
+				aDoms.mouseenter(function(){
+					$(this).css("color","white");
+				});
+				aDoms.mouseleave(function(){
+					$(this).css("color","#ffb4b6");
+				});
+			});
+		</script>
+	</div>
+<!--nav-->
+	<nav>
+		<div class="nav">
+			<a href="#">服饰</a>
+			<a href="#">美容</a>
+			<a href="#">奢华</a>
+			<a href="#">靓发</a>
+			<a href="#">明星</a>
+			<a href="#">男人</a>
+			<a href="#">生活</a>
+			<a href="#">视频</a>
+			<a href="#">评测</a>
+			<a href="#">试用</a>
+			<a href="#">化妆品库</a>
+			<a href="#">瑞丽之星</a>
+			<a target="_blank" href="pinpai.html">品牌库</a>
+			<a href="#">瑞丽移动端</a>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let aDoms = $(".nav").children();
+				aDoms.mouseenter(function(){
+					$(this).css("color","red");
+				});
+				aDoms.mouseleave(function(){
+					$(this).css("color","white");
+				});
+			});
+		</script>
+		<div class="search">
+			<a href="#"><img src="img/search.png" alt="" /></a>
+		</div>
+	</nav>
+<!--section-->
+	<section>
+		<div class="smallNav">
+			<a href="#">
+				<img src="img/x01.png" alt="" />
+				<span>手机瑞丽网</span>
+			</a>
+			<a href="#">
+				<img src="img/x01.png" alt="" />
+				<span>瑞丽美妆APP</span>
+			</a>
+			<a href="#">
+				<img src="img/x01.png" alt="" />
+				<span>瑞丽网APP</span>
+			</a>
+			<a href="#">
+				<img src="img/x02.png" alt="" />
+				<span>瑞丽网官方微信</span>
+			</a>
+			<div class="mCode">
+				<img src="img/m1.jpg" alt="一个二维码" />
+				<img src="img/m2.jpg" alt="一个二维码" />
+				<img src="img/m3.png" alt="一个二维码" />
+				<img src="img/m4.jpg" alt="一个二维码" />
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let aDoms = $(".smallNav>a");
+//				console.log(aDoms);
+				let imgDoms = $(".mCode").children();
+				imgDoms.css("display","none");
+				aDoms.each(function(i){
+					aDoms.eq(i).attr("index",i);
+				});
+				aDoms.mouseenter(function(){
+					let num = $(this).attr("index");
+					console.log(num);
+					imgDoms.eq(num).css("display","block");
+					$(this).children("span").css("color","red");
+				});
+				aDoms.mouseleave(function(){
+					let num = $(this).attr("index");
+					imgDoms.eq(num).css("display","none");
+					$(this).children("span").css("color","black");
+				});
+			});
+		</script>
+
+<!--fristContent-->
+		<div class="firstContent">
+			<div class="firstLeft">
+				<div class="firstSlide">
+				</div>
+				<script type="text/javascript">
+					$(document).ready( = function(){
+						let pic = new BannerPic({
+							"boxDom":$(".firstSlide"),
+							"width":"600",
+							"height":"200",
+							"imgs":["img/pic01.png","pic02.png","pic03.png","img/pic04.png","img/pic05.png","img/pic06.png","img/pic08.png","img/pic04.png"],
+							"douSize":10,
+							"douSpace":10,
+							"douColor":"yellow",
+							"douHighColor":"greenyellow",
+							"douIsCircle":false,
+							"doudouDirection":"下",
+							"timeSpace":2000
+						});
+					});
+				</script>
+				<div class="firstTt">
+					<div class="fL01">
+						<img src="img/pic06.jpg" alt="小花女" />
+						<div class="fL">
+						</div>
+					</div>
+					<div class="fL02">
+						<div class="fL02Top">
+							<img src="img/pic06.png" alt="Today  Focus" />
+						</div>
+						<div class="fL02Center">
+							<p><a href="#">01<span>&nbsp;/&nbsp;</span>谁说夕阳为允儿打光,她自带打光板</a></p>
+							<p><a href="#">02<span>&nbsp;/&nbsp;</span>白月光或成颜值新倾向？2019指路白肤美</a></p>
+							<p><a href="#">03<span>&nbsp;/&nbsp;</span>补水保湿反击张&nbsp;秒杀干皮必备的补水护肤品</a></p>
+							<p><a href="#">04<span>&nbsp;/&nbsp;</span>听说，酷的人都在穿肾上腺素紫</a></p>
+							<p><a href="#">05<span>&nbsp;/&nbsp;</span>R-Space瑞丽快闪店空降魔豆&nbsp;开启最IN星际漫游</a></p>
+							<p><a href="#">06<span>&nbsp;/&nbsp;</span>我不信有人在看过，《绿皮书》之后不想吃炸鸡</a></p>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function(){
+								let pDoms = $(".fL02Center>p");
+								pDoms.mouseenter(function(){
+									$(this).children().css("color","red");
+									$(this).children().children().css("color","red");
+									$(this).animate({left:10},100);
+								})
+								pDoms.mouseleave(function(){
+									
+									$(this).children().css("color","#1b1b1b");
+									$(this).children().children().css("color","#7f7f7f");
+									$(this).css("left",0);
+								})
+							});
+						</script>
+						<div class="fL02bottom">
+							<div class="fBLl">
+								<h3>活动精选</h3>
+								<img src="img/pic07.jpg"/>
+								<p>致力Noumber&nbsp;One</p>
+							</div>
+							<div class="fBRr">
+								<h3>红人专栏</h3>
+								<img src="img/pic08.jpg"/>
+								<p>致力Noumber&nbsp;Two</p>
+							</div>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function(){
+								let fB = $(".fL02bottom").children();
+								let pDoms = $(".fL02bottom").children().children("p");
+//								console.log(pDoms);
+								fB.mouseenter(function(){
+									$(this).children("p").css("color","red");
+									$(this).css("opacity",0.9);
+								})
+								fB.mouseleave(function(){
+									$(this).children("p").css("color","black");
+									$(this).css("opacity",1);
+								})
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="firstRight">
+				<div class="firstRight01">
+					<img src="img/pic02.png" alt="美女图，仅供欣赏！" />
+				</div>
+				<div class="fR02">
+					<h2>抢先试用</h2>
+					<div class="fR02x">
+						<img src="img/pic09.jpg"/>
+						<div class="fR02xx">
+							<p><a href="#">我的思密达，就是你的思密达ahaha</a></p>
+							<p>规格：500ml+1000</p>
+							<p>数量：5份</p>
+						</div>
+					</div>
+					<div class="fR02bottom">
+						<span>剩余12天11小时</span>
+						<span><p>更多免费使用</p></span>
+					</div>
+				</div>
+				<div class="fR03">
+					<img src="img/pic10.png" alt="滴滴" />
+				</div>
+			</div>
+		</div>
+<!--secondContent-->
+		<div class="secondContent">
+			<div class="sCHeader">
+				<img src="img/picbanner01.png" alt="banner" />
+			</div>
+		</div>
+		<div class="thirdContent">
+			<ul>
+				<li><a href="#">明星来了</a></li>
+				<li><a href="#">"咖"嚓一刻</a></li>
+				<li><a href="#">美肌管理课</a></li>
+				<li><a href="#">彩妆偶像</a></li>
+				<li><a href="#">百人评测团</a></li>
+				<li><a href="#">特别企划</a></li>
+			</ul>
+		</div>
+<!--fourthContent-->		
+		<div class="fourthContent fc01">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho01.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho02.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho03.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho04.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="fourthContent fc02">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho05.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho06.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho07.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho08.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="fourthContent fc03">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho06.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho09.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho01.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho03.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="fourthContent fc04">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho06.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho08.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho03.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho04.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="fourthContent fc05">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho09.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho07.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho01.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho02.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>	
+		<div class="fourthContent fc06">
+			<ul>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho02.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho09.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho06.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+				<li>
+					<div class="fCImg">
+						<a href="#"><img src="img/pho03.jpg" alt="" /></a>
+					</div>
+					<div class="fCTxt">
+						<h2><a href="#">明星来了，美莎</a></h2>
+						<h3><a href="#">来了老弟</a></h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let aDoms = $(".thirdContent").children().children().children();
+				let fouC = $(".fourthContent");
+				aDoms.each(function(i){
+					aDoms.eq(i).attr("index",i);
+				});
+				aDoms.mouseenter(function(){
+					console.log($(this).index);
+					
+					let str = $(this).attr("index")
+					$(".fourthContent").css("display","none")
+					$(".fourthContent").eq(str).css("display","block");
+					$(".thirdContent").children().children().css("border-bottom","none");
+					$(this).parent().css("border-bottom","6px solid red");
+					aDoms.css("color","#1b1b1b");
+					$(this).css("color","red");
+				});
+			})
+		</script>
+<!--fiveContent可复用-->
+		<div class="fiveContent">
+			<img src="img/banner02.png" alt="一个广告图片" />
+		</div>
+		<div class="fiveContent">
+			<img src="img/banner03.png" alt="还是个banner图片" />
+		</div>
+		<div class="fiveContent fiveCona">
+			<a href="#">皮风衣正当红</a>
+			<a href="#">乔欣奶油色外套</a>
+			<a href="#">高晓松惊艳奥斯卡</a>
+			<a href="#">AB惊艳Dior秀</a>
+			<a href="#">针织连衣裙</a>
+			<a href="#">早春风衣</a>
+		</div>
+		<div class="fiveBottom">
+			<div class="fBLeft">
+				
+			</div>
+			<div class="fBRight">
+				<img src="img/pic04.jpg" alt="图片" />
+			</div>
+		</div>
+<!--sixContent可复用-->
+		<div class="sixContent">
+			<div class="sixLeft">
+				<div class="sixLeftTop">
+					<img src="img/pic09.jpg" alt="" />
+					<p>网上被骂，买裙子护短</p>
+				</div>
+				<div class="sexLeftBottom">
+					<img src="img/pho03.jpg" alt="" />
+					<p>
+						<img src="img/pic11.png" alt="" />
+						<span>好迪用一生，好迪就是好用，用好迪的都是好人，你应该就是好人，好人一生平安</span>
+					</p>
+					<div class="long01"></div>
+					<h3>穿好未来感让你自带闪光灯</h3>
+					<div class="long02"></div>
+				</div>
+				<script type="text/javascript">
+					
+				</script>
+			</div>
+			<div class="sixLeftTop sixCenter">
+				<div class="sixLeft">
+					<div class="sixLeftTop">
+						<img src="img/pho01.jpg" alt="" />
+						<p>网上被骂，买裙子护短</p>
+					</div>
+					<script type="text/javascript">
+						$(function(){
+							$(".sixLeftTop").mouseenter(function(){
+								$(this).css("opacity",0.95);
+							});
+							$(".sixLeftTop").mouseleave(function(){
+								$(this).css("opacity",1);
+							});
+						});
+					</script>
+					<div class="sexLeftBottom">
+						<img src="img/pho02.jpg" alt="" />
+						<p>
+							<img src="img/pic11.png" alt="" />
+							<span>好迪用一生，好迪就是好用，用好迪的都是好人，你应该就是好人，好人一生平安</span>
+						</p>
+						<div class="long01"></div>
+						<h3>穿好未来感让你自带闪光灯</h3>
+						<div class="long02"></div>
+					</div>
+				</div>
+					<script type="text/javascript">
+						$(function(){
+							$(".sexLeftBottom").mouseenter(function(){
+								$(this).css("opacity",0.95);
+							});
+							$(".sexLeftBottom").mouseleave(function(){
+								$(this).css("opacity",1);
+							});
+						});
+					</script>
+			</div>
+			<div class="sixRight">
+				<div class="sixRightTop">
+					<img src="img/kuang02.png" alt="" />
+					<div class="srt">
+						<div><p><span>01</span>p里边加span写01</p></div>
+						<div><p><span>02</span>p里边加span写写02</p></div>
+						<div><p><span>03</span>p里边加span写写写03</p></div>
+						<div><p><span>04</span>p里边加span写写写写04</p></div>
+						<div><p><span>05</span>p里边加span写写写写写05</p></div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						let p = $(".srt").children();
+						p.mouseenter(function(){
+							$(this).children().css("color","red");
+							$(this).children().children().css("color","red");
+							$(this).children().animate({left:10},100);
+						});
+						p.mouseleave(function(){
+							$(this).children().css("color","black");
+							$(this).children().children().css("color","black");
+							$(this).children().animate({left:0},0);
+						});
+					});
+				</script>
+				<div class="sixRightBottom">
+					<img src="img/pho04.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+<!--瑞丽之星-->
+		<div class="ruiliZhixing">
+			<div class="Stak">
+				<img src="img/long02.png" alt="" />
+			</div>
+			<div class="ruiliMore">
+				<p>瑞丽之星</p>
+				<span>我要加入</span>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					$(".ruiliMore").children("span").mousemove(function(){
+						$(this).css("cursor","pointer");
+					});
+				});
+			</script>
+			<div class="ruiliyizu">
+				<ul>
+					<li>
+						<img src="img/pho01.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho02.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho03.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho04.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					let liDoms = $(".ruiliyizu").children().children()
+					liDoms.mouseenter(function(){
+						$(this).children("div").animate({top:0},200);
+						$(this).css("cursor","pointer");
+					});
+					liDoms.mouseleave(function(){
+						$(this).children("div").animate({top:280},200);
+					});
+				});
+			</script>
+			<div class="ruiliMore">
+				<p>瑞丽之星</p>
+			</div>
+			<div class="ruilimote">
+				<ul>
+					<li>
+						<img src="img/pic01.png" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho09.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho08.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho06.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho04.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/pho02.jpg" alt="" />
+						<div>
+							<p>国籍：中国</p>
+							<p>性别：女</p>
+							<p>年龄：22</p>
+							<p>身高：180</p>
+							<p>体重：110</p>
+							<p>姓名：柯柯</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				let liDoms = $(".ruilimote").children().children();
+				$(document).ready(function(){
+					liDoms.mouseenter(function(){
+						$(this).css("cursor","pointer");
+						$(this).children("div").css("display","block");
+						$(this).children("div").animate({top:0},200);
+					});
+					liDoms.mouseleave(function(){
+						$(this).children("div").animate({top:150},200);
+//						$(this).children("div").css("display","none");
+					});
+				});
+			</script>
+		</div>
+<!--MOBILE移动-->	
+		<div class="mobile">
+			<div class="phone01">
+				<div class="phone01_tu">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692086173.jpg" />
+				</div>
+				<div class="phone01_ma ma">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692567768.jpg">
+				</div>
+			</div>
+			<div class="phone02">
+				<div class="phone02_tu">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692114362.jpg">
+				</div>
+				<div class="phone02_ma ma">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692343390.png">
+				</div>
+			</div>
+			<div class="phone03">
+				<div class="phone03_tu">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692198360.jpg">
+				</div>
+				<div class="phone03_ma ma">
+					<img src="http://uploads.rayli.com.cn/2017/0502/1493692351838.png">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.mobile').children().mouseenter(function(){
+					$(this).animate({bottom:20,zIndex:100},300);
+					$(this).children(".ma").css({"display":"block"});
+//					$(this).css()
+				});
+				$('.mobile').children().mouseleave(function(){
+					$(this).animate({bottom:0},0);
+					$(this).children(".ma").css("display","none");
+					$(this).animate({bottom:0,zIndex:0},10);
+					$(".phone02").css("z-index",10);
+				});
+			});
+		</script>
+<!--weChat扫码栏-->
+		<div class="weChat">
+			<div class="weChat_left">
+				<div class="weChat_left_01">
+					<img src="http://images.rayli.com.cn/www/images/n17_icon_weixin.png">
+				</div>
+				<div class="weChat_left_02">
+					<h3>官方微信来扫一扫</h3>
+					<p>微信扫扫，扫扫领红包，点击领取！</p>
+				</div>
+				<div class="weChat_left_03">
+					<img src="http://images.rayli.com.cn/www/images/n17_weixin_ma.jpg">
+				</div>
+			</div>
+			<div class="weChat_right">
+				<div class="weChat_right_01">
+					<img src="http://images.rayli.com.cn/www/images/n17_icon_weibo.png">
+				</div>
+				<div class="weChat_right_02">
+					<h3>瑞丽二维码来扫一扫</h3>
+					<p>瑞丽扫扫，扫扫领红包，点击领取！</p>
+				</div>
+				<div class="weChat_right_03">
+					<img src="http://images.rayli.com.cn/www/images/n17_weibo_ma.jpg">
+				</div>
+			</div>
+			<div class="weChat_bottom">
+				<ul>
+					<li>瑞丽动态</li>
+					<li>
+						<a href="#">《男人风尚》携手打造</a>
+					</li>
+					<li>
+						<a href="#">携手打造《女人时尚》</a>
+					</li>
+					<li>
+						<a href="#">入驻瑞丽，赢美丽人生</a>
+					</li>
+					<li>
+						<a href="#">瑞丽，女人的衣柜</a>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					let liDoms = $(".weChat_bottom").children().children();
+					liDoms.mouseenter(function(){
+						$(this).children("a").css("color","red");
+					});
+					liDoms.mouseleave(function(){
+						$(this).children("a").css("color","black");
+					});
+				});
+			</script>
+		</div>
+	</section>
+<!--footer-->
+	<footer>
+		<div class="footer_top">
+			<ul class="footer_top_ul">
+				<li><a href="#">页底题目一</a></li>
+				<li><a href="#">页底题目二</a></li>
+				<li><a href="#">页底题目三</a></li>
+				<li><a href="#">页底题目四</a></li>
+			</ul>
+		</div>
+		<div class="footer_center">
+			<ul>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴ee</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴企鹅</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴腾讯网</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴QQ</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴en</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+				<li><a href="#">瑞丽伙伴</a></li>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+			<div class="footer_bottom_left">
+				<div class="footer_bottom_left_header">
+					关注我们
+				</div>
+				<div class="footer_bottom_left_01">
+					<a class="xinlang" href="http://weibo.com/rayli" target="_blank" title="" class="xinlang">新浪</a>
+					<a class="weibo" href="http://e.t.qq.com/raylirayli" target="_blank" title="" class="weibo">微博</a>
+					<a class="kongjian" href="http://user.qzone.qq.com/1909517553/main" target="_blank" title="" class="zz">z</a>
+					<a class="renren" href="http://page.renren.com/601396420/index" target="_blank" title="" class="ren">人人网</a>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						let aDoms = $(".footer_bottom_left_01").children("a");
+						aDoms.mousemove(function(){
+							$(this).css("background-position",-55px -110px);
+						});
+					});
+				</script>
+				<div class="footer_bottom_left_02">
+					<img src="http://images.rayli.com.cn/templates/rayli/rayli/images/86_sl.jpg" width="111" height="111" alt="">
+				</div>
+			</div>
+			<div class="footer_bottom_center">
+				<div class="footer_bottom_center_header">
+					<a href="#">法律声明</a>
+					<a href="#">联系我们</a>
+					<a href="#">忽略他们</a>
+					<a href="#">嗯嗯</a>
+					<a href="#">就是的</a>
+					<a href="#">果然很强</a>
+					<a href="#">寿碧干</a>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						let liDoms = $(".footer_bottom_center_header").children();
+						liDoms.mouseenter(function(){
+							$(this).css("color","red");
+						});
+						liDoms.mouseleave(function(){
+							$(this).css("color","#666666");
+						});
+					});
+				</script>
+				<div class="footer_bottom_center_01">
+					<ul>
+						<li>
+							<a href="#">辣椒粉IE来几个 几覅法计</a>
+							<a href="#">方洁安jfea 加法甲类fjia</a>
+						</li>
+						<li>
+							<a href="#">没放假哎jifjei 附近偶家分离焦虑</a>
+							<a href="#">fjjfi解决了我借来了jfie就发婕拉佛</a>
+						</li>
+						<li>
+							<a href="#">分解of金额拉法基dkk 减肥案例房间诶</a>
+							<a href="#">房间诶交警覅额及jiefjio</a>
+							<img border="0" align="absmiddle" width="20" height="20" src="http://uploads.rayli.com.cn/2017/1214/1513231711814.png">
+						</li>
+						<li>
+							<p>
+								feia   fa几覅恶案件分解哦啊jfie fjeif 附近偶尔放假几天
+							</p>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						let liDoms = $(".footer_bottom_center_01").children().children().children("a");
+						liDoms.mouseenter(function(){
+							$(this).css("color","red");
+						});
+						liDoms.mouseleave(function(){
+							$(this).css("color","#666666");
+						});
+					});
+				</script>
+				<div class="footer_bottom_center_02">
+					<img border="0" align="absmiddle" width="36" height="43" src="http://www.rayli.com.cn/eightimages/beianlogod2.gif">
+					<br />
+					"经营性网站"
+					<br />
+					备案信息
+				</div>
+			</div>
+			<div class="footer_bottom_right">
+				<ul>
+					<li>
+						<span>时尚</span>
+						<a href="#">星座</a>
+						<a href="#">情感</a>
+						<a href="#">娱乐</a>
+						<a href="#">奶茶</a>
+						<a href="#">妹妹</a>
+						<a href="#">美莎</a>
+					</li>
+					<li>
+						<span>生活</span>
+						<a href="#">跑步</a>
+						<a href="#">打球</a>
+						<a href="#">花钱</a>
+						<a href="#">挣钱</a>
+						<a href="#">油烟</a>
+					</li>
+					<li>
+						<span>互动</span>
+						<a href="#">你好</a>
+						<a href="#">聊天</a>
+						<a href="#">携手</a>
+						<a href="#">共诗</a>
+						<a href="#">题红</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				let liDoms = $(".footer_bottom_right").children().children().children("a");
+				liDoms.mouseenter(function(){
+					$(this).css("color","red");
+				});
+				liDoms.mouseleave(function(){
+					$(this).css("color","#666666");
+				});
+			});
+		</script>
+	</footer>
+</body>
+</html>
